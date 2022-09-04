@@ -7,8 +7,10 @@ Task_36();
 void Task_36()
 {
     Console.WriteLine("Задача 36. Подсчет суммы нечетных элементов в массиве");
+
     Console.Write("Введите длину массива: ");
     int length = int.Parse(Console.ReadLine()!);
+    
     int[] array = FillArray(length, -99, 99);
     PrintArray(array);
     Console.WriteLine(" -> " + SumOddItem(array));
