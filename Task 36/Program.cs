@@ -2,9 +2,9 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-Task_34();
+Task_36();
 
-void Task_34()
+void Task_36()
 {
     Console.WriteLine("Задача 36. Подсчет суммы нечетных элементов в массиве");
     Console.Write("Введите длину массива: ");
@@ -39,7 +39,7 @@ void PrintArray(int[] tempArray)
 int SumOddItem(int[] checkArray)
 {
     int result = 0;
-    
+
     for (int i = 1; i < checkArray.Length; i += 2)
     {
         result += checkArray[i];
