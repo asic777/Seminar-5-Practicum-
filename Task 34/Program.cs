@@ -7,8 +7,10 @@ Task_34();
 void Task_34()
 {
     Console.WriteLine("Задача 34. Подсчет четных чисел в массиве");
+
     Console.Write("Введите длину массива: ");
     int length = int.Parse(Console.ReadLine()!);
+    
     int[] array = FillArray(length, 100, 999);
     PrintArray(array);
     Console.WriteLine(" -> " + CheckMod2(array));
@@ -39,9 +41,11 @@ void PrintArray(int[] tempArray)
 int CheckMod2(int[] checkArray)
 {
     int result = 0;
+
     foreach (var item in checkArray)
     {
         result += item % 2 == 0 ? 1 : 0;
     }
+
     return result;
 }
