@@ -6,7 +6,10 @@ Task_34();
 
 void Task_34()
 {
-    int[] array = FillArray(4, 100, 999);
+    Console.WriteLine("Задача 34. Подсчет четных чисел в массиве");
+    Console.Write("Введите длину массива: ");
+    int length = int.Parse(Console.ReadLine()!);
+    int[] array = FillArray(length, 100, 999);
     PrintArray(array);
     Console.WriteLine(" -> " + CheckMod2(array));
 }
